@@ -87,3 +87,175 @@ section {
 footer {
     background: #0a0f1f;
 }
+
+/* TIMELINE VERTICAL MODERNA */
+.timeline-vertical {
+    position: relative;
+    margin: 4rem 0;
+    padding: 2rem 0;
+}
+
+.timeline-vertical::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #8b5cf6, #4f46e5);
+    box-shadow: 0 0 8px rgba(79, 70, 229, 0.4);
+}
+
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.timeline-item.left {
+    left: 0;
+    text-align: right;
+}
+
+.timeline-item.right {
+    left: 50%;
+    text-align: left;
+}
+
+.timeline-point {
+    position: absolute;
+    top: 1rem;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border: 4px solid #4f46e5;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-item.left .timeline-point {
+    right: -8px;
+}
+
+.timeline-item.right .timeline-point {
+    left: -8px;
+}
+
+.timeline-content {
+    background: linear-gradient(135deg, #4f46e5, #8b5cf6);
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.timeline-content h5 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+    margin: 0;
+}
+
+.timeline-item:hover .timeline-content {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 768px) {
+
+    .timeline-item,
+    .timeline-item.left,
+    .timeline-item.right {
+        width: 100%;
+        left: 0;
+        text-align: left;
+        padding-left: 3rem;
+        padding-right: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .timeline-point {
+        left: 0 !important;
+        right: auto !important;
+    }
+}
+
+/* FEATURED APPLICATIONS - VERSIÓN MORADA */
+.project-card {
+    background: linear-gradient(135deg, #4f46e5, #8b5cf6);
+    color: #fff;
+    /* texto blanco */
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card h5 {
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: #fff;
+    /* mantiene el título en blanco */
+}
+
+.project-card p {
+    color: #e0e0ff;
+    /* texto secundario un poco más claro para contraste */
+    flex-grow: 1;
+}
+
+.project-card small {
+    color: #dcd6ff;
+    /* texto de menor jerarquía más tenue */
+    margin-top: 1rem;
+    display: block;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* ABOUT ME - CUADRO AJUSTADO MORADO CLARO */
+#about-me {
+    max-width: 800px;       /* limita el ancho del cuadro */
+    margin: 3rem auto;      /* centrado horizontal con margen superior e inferior */
+    padding: 2rem 2rem;     /* padding más compacto */
+    background: #e0d7ff;    /* morado claro suave */
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#about-me h2 {
+    font-weight: 700;
+    font-size: 2rem;        /* un poquito más pequeño que antes */
+    color: #4f46e5;
+    margin-bottom: 1rem;
+}
+
+#about-me p.lead {
+    font-size: 1.05rem;
+    color: #2d2d2d;
+    margin-bottom: 0.75rem;
+}
+
+#about-me p {
+    font-size: 0.95rem;
+    color: #333333;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}

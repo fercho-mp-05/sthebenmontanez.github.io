@@ -1,0 +1,89 @@
+:root {
+    --bg-dark: radial-gradient(circle at top right, #1e1b4b 0%, #0a0f1f 40%);
+    --text-dark: #e5e7eb;
+    --card-bg: #111827;
+    --primary: #6366f1;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg-dark);
+    color: var(--text-dark);
+    overflow-x: hidden;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #6366f1, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.iphone {
+    width: 320px;
+    height: 640px;
+    background: #000;
+    border-radius: 50px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 0 80px rgba(99, 102, 241, 0.6);
+}
+
+.notch {
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 35px;
+    background: #000;
+    border-radius: 25px;
+    z-index: 10;
+}
+
+.screen {
+    width: 100%;
+    height: 100%;
+    background: #111827;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.screen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#metrics h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #8b5cf6;
+}
+
+.contact-box {
+    background: #111827;
+    border-radius: 20px;
+    padding: 40px;
+    border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.cta {
+    background: linear-gradient(90deg, #6366f1, #8b5cf6);
+    padding: 60px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+footer {
+    background: #0a0f1f;
+}

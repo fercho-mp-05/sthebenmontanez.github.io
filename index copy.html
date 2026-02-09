@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stheben Montañez | Senior Mobile Systems Engineer</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-dark: radial-gradient(circle at top right, #1e1b4b 0%, #0a0f1f 40%);
+            --text-dark: #e5e7eb;
+            --card-bg: #111827;
+            --primary: #6366f1;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        section {
+            padding: 100px 0;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #6366f1, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .iphone {
+            width: 320px;
+            height: 640px;
+            background: #000;
+            border-radius: 50px;
+            padding: 20px;
+            position: relative;
+            box-shadow: 0 0 80px rgba(99, 102, 241, 0.6);
+        }
+
+        .notch {
+            position: absolute;
+            top: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 180px;
+            height: 35px;
+            background: #000;
+            border-radius: 25px;
+            z-index: 10;
+        }
+
+        .screen {
+            width: 100%;
+            height: 100%;
+            background: #111827;
+            border-radius: 40px;
+            overflow: hidden;
+        }
+
+        .screen img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .architecture-box {
+            background: #111827;
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(99, 102, 241, 0.3);
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background: #6366f1;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+        }
+
+        .timeline-item {
+            padding: 20px 40px;
+            position: relative;
+            width: 50%;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background: #8b5cf6;
+            border: 3px solid #111827;
+            top: 30px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            left: 50%;
+        }
+
+        .right::after {
+            left: -10px;
+        }
+
+        @media screen and (max-width:768px) {
+            .timeline::after {
+                left: 20px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 60px;
+                padding-right: 25px;
+            }
+
+            .timeline-item::after {
+                left: 15px;
+            }
+
+            .right {
+                left: 0%;
+            }
+        }
+
+        #metrics h2 {
+            font-size: 48px;
+            font-weight: 700;
+            color: #8b5cf6;
+        }
+
+        .contact-box {
+            background: #111827;
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid rgba(99, 102, 241, 0.2);
+        }
+
+        .cta {
+            background: linear-gradient(90deg, #6366f1, #8b5cf6);
+            padding: 60px 20px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background: #0a0f1f;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold">
+                        Mobile Engineer | Enterprise-Oriented Solutions<br>
+                        <span class="gradient-text">Enterprise & Offline-Resilient Architect</span>
+                    </h1>
+
+                    <p class="mt-4">
+                        I design and build enterprise-grade mobile systems focused on scalability,
+                        offline resilience and secure backend integrations.
+                    </p>
+
+                    <p>
+                        Specialized in high-volume transactional environments and industrial
+                        device integrations. Available for remote US & Europe collaborations.
+                    </p>
+
+                    <div class="mt-4">
+                        <span class="badge bg-dark me-2">Flutter</span>
+                        <span class="badge bg-dark me-2">SQL Server</span>
+                        <span class="badge bg-dark me-2">SQLite</span>
+                        <span class="badge bg-dark me-2">Bluetooth</span>
+                        <span class="badge bg-dark">REST APIs</span>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                    <div class="iphone mx-auto">
+                        <div class="notch"></div>
+                        <div class="screen">
+                            <div id="carouselApp" class="carousel slide h-100">
+                                <div class="carousel-inner h-100">
+                                    <div class="carousel-item active h-100">
+                                        <img src="images/cognispend_login.png">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="images/vocto_login.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+
+                    <h2 class="mb-4">About Me</h2>
+
+                    <p class="lead">
+                        I am a Mobile Engineer | Enterprise-Oriented Solutions based in LATAM,
+                        specialized in building enterprise-grade mobile solutions
+                        for high-volume and low-connectivity environments.
+                    </p>
+
+                    <p>
+                        My experience includes designing offline-first architectures,
+                        integrating secure REST APIs, optimizing SQL Server
+                        infrastructures, and connecting industrial Bluetooth devices
+                        into real production workflows.
+                    </p>
+
+                    <p>
+                        I focus on building systems that are not only functional,
+                        but resilient, scalable and engineered for long-term growth.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- METRICS -->
+    <section id="metrics">
+        <div class="container text-center">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <h2 class="counter" data-target="5">0</h2>
+                    <p>Production Applications</p>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="counter" data-target="3">0</h2>
+                    <p>Years Engineering Experience</p>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="counter" data-target="20000">0</h2>
+                    <p>Monthly Transactions Processed</p>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="counter" data-target="99">0</h2>
+                    <p>% Data Sync Reliability</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ARCHITECTURE -->
+    <section>
+        <div class="container">
+            <h2 class="text-center mb-5">System Architecture Approach</h2>
+            <div class="architecture-box">
+                <p>
+                    My architecture philosophy is centered on resilience, scalability and maintainability.
+                </p>
+                <ul>
+                    <li>Offline-first data synchronization strategies</li>
+                    <li>Secure REST API communication layers</li>
+                    <li>Modular and scalable code structure</li>
+                    <li>Enterprise SQL Server integration</li>
+                    <li>Industrial Bluetooth & hardware communication</li>
+                    <li>High-volume transactional optimization</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section>
+        <div class="container">
+            <h2 class="text-center mb-5">Professional Journey</h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h5>2022 — Enterprise Mobile Developer</h5>
+                        <p>Developed secure REST-integrated mobile systems connected to SQL Server infrastructures.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h5>2023 — Offline Architecture Specialist</h5>
+                        <p>Designed resilient synchronization engines for unstable connectivity environments.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h5>2024 — Industrial Systems Integration</h5>
+                        <p>Integrated TSC & Zebra industrial printers into production workflows increasing operational
+                            efficiency.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h5>2025 — Senior Mobile Systems Engineer</h5>
+                        <p>Architecting scalable, secure and enterprise-ready mobile ecosystems.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- AVAILABILITY -->
+    <section>
+        <div class="container text-center">
+            <h2 class="mb-4">Availability & Collaboration</h2>
+            <p>Based in Colombia (GMT-5)</p>
+            <p>Open to Remote Full-Time & Contract Roles</p>
+            <p>US & Europe Timezone Overlap</p>
+            <p>Fluent Spanish | Professional English</p>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="contact-box text-center">
+                        <p><strong>Email:</strong> tuemail@email.com</p>
+                        <p><strong>GitHub:</strong> github.com/tuperfil</p>
+                        <p><strong>LinkedIn:</strong> linkedin.com/in/tuperfil</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section>
+        <div class="container">
+            <div class="cta">
+                <h3 class="text-white mb-3">Let’s Build Reliable Enterprise Systems</h3>
+                <p class="text-white mb-4">Download my resume and let's collaborate on scalable mobile solutions.</p>
+                <a href="CV_Stheben_Montanez.pdf" download class="btn btn-light btn-lg">
+                    Download Resume (PDF)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-4">
+        © 2026 Stheben Montañez — Senior Mobile Systems Engineer
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        new bootstrap.Carousel('#carouselApp', { interval: 3000, ride: 'carousel', pause: false });
+
+        const counters = document.querySelectorAll('.counter');
+        let triggered = false;
+        window.addEventListener('scroll', () => {
+            const section = document.getElementById('metrics');
+            if (section.getBoundingClientRect().top < window.innerHeight && !triggered) {
+                counters.forEach(counter => {
+                    const update = () => {
+                        const target = +counter.dataset.target;
+                        const current = +counter.innerText;
+                        const increment = target / 100;
+                        if (current < target) {
+                            counter.innerText = Math.ceil(current + increment);
+                            setTimeout(update, 20);
+                        } else { counter.innerText = target; }
+                    };
+                    update();
+                });
+                triggered = true;
+            }
+        });
+    </script>
+
+</body>
+
+</html>

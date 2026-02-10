@@ -48,20 +48,6 @@ https://fernando-montanez.netlify.app/
 
 ---
 
-## 📊 GitHub Stats
-
-![Fernando's GitHub stats](https://github-readme-stats.vercel.app/api?username=fercho-mp-05&show_icons=true&theme=tokyonight)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=fercho-mp-05&layout=compact&theme=tokyonight)
-
----
-
-## 🏆 GitHub Trophies
-
-![Trophies](https://github-profile-trophy.vercel.app/?username=fercho-mp-05&theme=tokyonight&margin-w=10&margin-h=10)
-
----
-
 ## 📈 Current Focus
 
 - Improving Flutter architecture patterns
@@ -86,3 +72,4 @@ To become a highly skilled Mobile & Systems Engineer capable of building scalabl
 ---
 
 ⭐ If you like my work, feel free to explore my repositories.
+

@@ -58,12 +58,4 @@ I am currently a **Technology Student** passionate about building practical mobi
 └── README.md
 
 
----
 
-## 🚀 Run Locally
-
-To run this project locally:
-
-```bash
-git clone https://github.com/fercho-mp-05/YOUR-REPOSITORY-NAME.git
-cd YOUR-REPOSITORY-NAME
